@@ -5,7 +5,8 @@ from sqlalchemy.orm import declarative_base
 from sqlalchemy.sql import text
 
 username = 'postgres'
-db_password = 134472
+db_password = "password"
+
 
 db_url = f'postgresql+psycopg2://{username}:{db_password}@localhost:5432/sales'
 engine = create_engine(db_url)
